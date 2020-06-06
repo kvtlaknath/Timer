@@ -71,8 +71,15 @@ h1 {
   margin-bottom: 10px;
 }
 
-.displayedTime2 {
+.lable {
   margin-bottom: 10px;
+  padding: 0;
+  font-size: 3em;
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 15px solid #222;
 }
 
 button, input[type="submit"] {

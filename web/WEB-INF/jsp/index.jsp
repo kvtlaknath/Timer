@@ -9,15 +9,10 @@
 <!DOCTYPE html>
 <html>
       <body>
-        <div id="total">
-             <div>
-                 <h2> <output style="text-align:center;" id="display-total">Total Timer</output> </h2>
-        </div>
-            <h1><output id="display-area">00:00:00</output></h1>
-        </div>
-               <div id="app"></div>
-<div id="app2"></div>
-<div id="app3"></div>
+        <div id="total"></div>
+        <div id="app"></div>
+        <div id="app2"></div>
+        <div id="app3"></div>
 
 <link href="css/index.css" rel="stylesheet" type="text/css"/>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js'></script>
