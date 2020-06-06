@@ -1,7 +1,7 @@
 class Clock extends React.Component {
   format(time = new Date()) {
 
-    
+    let totalcount =0;
     let millsec = time % 1000;
   time = (time - millsec) / 1000;
   let seconds = Math.floor(time % 60);
@@ -84,6 +84,7 @@ class App extends React.Component {
   }
 
   handleStart() {
+      console.log("ststststs")
     this.timer = setInterval(() => {
       const newCount = this.state.count + 5;
       const totalcount = this.state.count+newCount;
@@ -128,14 +129,14 @@ class App extends React.Component {
 
   }}
   
-  //***************ToTal***********
   
+  //***************ToTal***********
+ 
   class Apptotal extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 0,
-      running: false };
+      running: true };
 
   }
   render() {
@@ -152,3 +153,9 @@ ReactDOM.render(React.createElement(App, null), document.getElementById('app'));
 ReactDOM.render(React.createElement(App, null), document.getElementById('app2'));
 ReactDOM.render(React.createElement(App, null), document.getElementById('app3'));
 ReactDOM.render(React.createElement(Apptotal, null), document.getElementById('total'));
+
+  
+var j = schedule.scheduleJob({  rule: '*/1 * * * * *' }, function(){
+  this.Apptotal.render();
+});
+    
