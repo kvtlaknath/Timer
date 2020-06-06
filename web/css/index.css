@@ -1,0 +1,150 @@
+
+
+       @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #211a4c;
+  background: -moz-linear-gradient(-45deg, #211a4c 0%, #8200ff 100%);
+  background: -webkit-linear-gradient(-45deg, #211a4c 0%,#8200ff 100%);
+  background: linear-gradient(135deg, #211a4c 0%,#8200ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#211a4c', endColorstr='#8200ff',GradientType=1 );
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content:  flex-start;
+  font-family: sans-serif;
+  font-size: 1em;
+  color: #222;
+}
+
+
+
+#app {
+  width: 60%;
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+/*  box-shadow: 0px 2px 2px rgba(0,0,0,0.3);*/
+  text-align: center;
+}
+#app2 {
+  width: 40%;
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+  text-align: right;
+}
+#app3 {
+  width: 25%;
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+  text-align: right;
+}
+#total {
+  width: 25%;
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+  text-align: right;
+}
+h1 {
+  margin: 0;
+  font-size: 3em;
+}
+
+.container {
+  border: 2px solid #ccc;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.displayedTime {
+  margin-bottom: 10px;
+}
+
+.displayedTime2 {
+  margin-bottom: 10px;
+}
+
+button, input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #bbb;
+  font-size: 1.3em;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+button:hover {
+  background-color: #F33535
+}
+
+input[type="submit"] {
+  background-color: #211a4c;
+}
+
+input[type="submit"]:hover {
+  background-color: #8200ff;
+
+}
+
+input[type="text"] {
+  margin-bottom: 30px;
+  padding: 0;
+  font-size: 1em;
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #222;
+}
+
+
+@media (min-width:640px) {
+  
+  #app {
+    width: 50%;
+  }
+  #app2 {
+    width: 50%;
+  }
+  #app3 {
+    width: 50%;
+  }
+  #total {
+    width: 50%;
+  }
+}
+
+@media (min-width:300px) {
+  
+  h1 {
+    font-size: 3em;
+  }
+  
+  #app {
+    width: 25%;
+  }
+  #app2 {
+    width: 25%;
+  }
+  #app3 {
+    width: 25%;
+  }
+  #totla {
+    width: 25%;
+  }
+}
